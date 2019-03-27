@@ -1,11 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `What can we help you with?`,
+    description: `Sample Start up data fetcher app`,
+    author: `@Kcan2001`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "SUAPI",
+        fieldName: "startupData",
+        url: "https://api.cadams.io/v1/startup",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
