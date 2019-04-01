@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from "react"
-import { Link } from "gatsby"
-import { graphql } from "gatsby"
 import axios from "axios"
 import Card from '../components/Card';
 import CardPage from '../components/CardPage'

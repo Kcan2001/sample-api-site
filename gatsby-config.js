@@ -7,14 +7,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-source-graphql",
-      options: {
-        typeName: "SUAPI",
-        fieldName: "startupData",
-        url: "https://api.cadams.io/v1/startup",
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
